@@ -17,19 +17,19 @@ We're looking for developers who are passionate about their work and can quickly
 
 ### Features:
 
-1. **Add Task:** Allow users to add a new task by typing in a task description and hitting enter or clicking a button.
-2. **List Tasks:** Display the list of tasks in a scrollable container. Each task item should show the task description and a checkbox to mark the task as completed.
-3. **Mark Task as Completed:** When a user checks the checkbox, the task should be marked as completed. A visual indication (e.g., strike-through or change in background color) should differentiate completed tasks from pending ones.
-4. **Delete Task:** Include a delete button/icon next to each task, allowing users to delete tasks from the list.
-5. **Filter Tasks:** Implement a simple filter that allows users to toggle between showing all tasks, completed tasks, and pending tasks.
+1. [x] **Add Task:** Allow users to add a new task by typing in a task description and hitting enter or clicking a button.
+2. [x] **List Tasks:** Display the list of tasks in a scrollable container. Each task item should show the task description and a checkbox to mark the task as completed.
+3. [x] **Mark Task as Completed:** When a user checks the checkbox, the task should be marked as completed. A visual indication (e.g., strike-through or change in background color) should differentiate completed tasks from pending ones.
+4. [x] **Delete Task:** Include a delete button/icon next to each task, allowing users to delete tasks from the list.
+5. [x] **Filter Tasks:** Implement a simple filter that allows users to toggle between showing all tasks, completed tasks, and pending tasks.
 
 ### Backend Features:
 
-1. **Create Task:** Create an API endpoint to add a new task with a description. Assign a unique ID and store the task in the PostgreSQL database.
-2. **List Tasks:** Create an API endpoint to retrieve all tasks from the database.
-3. **Update Task:** Create an API endpoint to update the status of a task (completed or pending).
-4. **Delete Task:** Create an API endpoint to delete a task from the database.
-5. **Filter Tasks:** Modify the list tasks endpoint to accept query parameters for filtering completed and pending tasks.
+1. [x] **Create Task:** Create an API endpoint to add a new task with a description. Assign a unique ID and store the task in the PostgreSQL database.
+2. [x] **List Tasks:** Create an API endpoint to retrieve all tasks from the database.
+3. [x] **Update Task:** Create an API endpoint to update the status of a task (completed or pending).
+4. [x] **Delete Task:** Create an API endpoint to delete a task from the database.
+5. [x] **Filter Tasks:** Modify the list tasks endpoint to accept query parameters for filtering completed and pending tasks.
 
 ### Guidelines and Requirements:
 
