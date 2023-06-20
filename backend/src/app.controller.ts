@@ -9,4 +9,8 @@ export class AppController {
   getHello(): { data: string } {
     return this.appService.getHello();
   }
+//   // Add Task
+//   getMessages(){
+//     return this.quotesService.getQuotes();
+// }
 }

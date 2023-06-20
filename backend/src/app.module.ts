@@ -3,6 +3,9 @@ import { AppEntity } from "./app.entity";
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { TaskManagerModule } from './todo/task_manager/task_manager.module';
+import { TasksController } from './todo/tasks.controller';
+import { TaskService } from './todo/task.service';
 
 @Module({
   imports: [
@@ -17,9 +20,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       entities: [AppEntity],
       logging: true
     }),
-    TypeOrmModule.forFeature([AppEntity])
+    TypeOrmModule.forFeature([AppEntity]),
+    TaskManagerModule
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [AppController, TasksController],
+  providers: [AppService, TaskService],
 })
 export class AppModule {}
